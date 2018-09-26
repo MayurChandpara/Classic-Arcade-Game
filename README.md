@@ -2,7 +2,7 @@
 This game is based on the classic arcade games used to be which lead to its name **"Classic Arcade Game"**. The whole game is a Udacity Nanodegree Final Project. The entire resources were provided by the Udacity Team, stuffs like the characters, the game board , the measurement and **the game engine**. I have utilized the complete resources and made the logic of the entire game using simple to read comments in addition to the provided instructions in the comments.
 
 ## Installation
-Just clone the GitHub repo and you are done open _index_ file and start playing.
+Just clone the GitHub repo and you are done open _index_ file and start playing.  
 `git clone https://github.com/MayurChandpara/Classic-Arcade-Game.git`
 
 ## The Rules:
