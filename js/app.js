@@ -1,3 +1,4 @@
+"use strict";
 //Checking the avatar and declaring one
 let Avatar = "images/char-boy.png";
 if (location.search === "?1") {
