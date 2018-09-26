@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Effective JavaScript: Frogger</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+</head>
+<body>
+
+  <!-- This page will greet congratulations-->
+
+  <section class="Greeting">
+    <h2 class="winmsg">Yeaahhhh!!!! You Won!</h2>
+    <p class="info"><strong>Gems Collection : </strong><span id="gems"></span></p>
+    <p>So how about once more???</p>
+    <button class="button" id="playAgain">Play Again</button>
+  </section>
+
+    <script>
+      const playAgain = document.getElementById('playAgain');
+      playAgain.onclick = function () {
+        window.location = "./index.html";
+      }
+
+      let parsing = location.search.replace('?',"");
+
+      const gems = document.getElementById("gems");
+      gems.textContent = parsing;
+    </script>
+</body>
+</html>

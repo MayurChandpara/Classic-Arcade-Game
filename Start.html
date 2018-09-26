@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+</head>
+<body>
+  <!-- This page will give the details on the game rules and some about and then will prompt to choose the character  -->
+
+  <section class="About">
+    <h1>The Classic Arcade Game!!!</h1>
+    <p>This game is edited by <em>Mayur Chandpara</em> and Designed/programed by <em>Udacity Nanodegree</em>.
+    Read the rules below to understand the game rules and click the start button
+     to enjoy the Game. The game can only be played by keyboard.</p>
+  </section>
+
+  <section class="Rules">
+    <h2>The Rules:</h2>
+    <ol><li>Use left, up, down, right Arrows to navigate the character.</li>
+    <li>You can select your character.</li>
+    <li>Reach the river to dive and win the Game.</li>
+    <li>Best of luck. See you on the other side.</li>
+  </ol>
+  </section>
+
+  <section class="Avatar">
+    <h3>Select Any Character:-</h3>
+
+    <div class="album" id="Avatar">
+      <table>
+        <tr>
+            <td>
+                <img src="images\char-boy.png" alt="char boy">
+            </td>
+            <td>
+                <img src="images\char-cat-girl.png"alt="char girl">
+            </td>
+            <td>
+                <img src="images\char-horn-girl.png" alt="char girl">
+            </td>
+            <td>
+                <img src="images\char-pink-girl.png" alt="char girl">
+            </td>
+            <td>
+                <img src="images\char-princess-girl.png" alt="char princess">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center">
+                <input type="radio" id="r1" name="Avatar" value="1" checked>
+            </td>
+            <td style="text-align:center">
+                <input type="radio" id="r2" name="Avatar" value="2">
+            </td>
+            <td style="text-align:center">
+                <input type="radio" id="r3" name="Avatar" value="3">
+            </td>
+            <td style="text-align:center">
+                <input type="radio" id="r4" name="Avatar" value="4">
+            </td>
+            <td style="text-align:center">
+                <input type="radio" id="r5" name="Avatar" value="5">
+            </td>
+        </tr>
+      </table>
+
+    </div>
+
+  <section class="Conclusion">
+    <p>
+      This is a project of my Web Developer Nanodegree.
+      <em>(Project 3: The Classic Arcade Game)</em>.
+    </p>
+
+    <button class="button" id="startButton">Start the Game!</button>
+  </section>
+
+    <script>
+      const startButton = document.getElementById("startButton");
+
+      startButton.onclick = function () {
+          let ava = 0;
+      //Checking the avatar selected by the user
+      if (document.getElementById("r1").checked) {
+           ava = document.getElementById("r1").value;
+        } else if (document.getElementById("r2").checked) {
+           ava = document.getElementById("r2").value;
+        } else if (document.getElementById("r3").checked) {
+           ava = document.getElementById("r3").value;
+        } else if (document.getElementById("r4").checked) {
+           ava = document.getElementById("r4").value;
+        } else if (document.getElementById("r5").checked) {
+           ava = document.getElementById("r5").value;
+        }
+          window.location = "./index.html?" + ava;
+      }
+
+  </script>
+</body>
+</html>

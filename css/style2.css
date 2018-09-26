@@ -1,0 +1,49 @@
+* {
+  font-family: Roboto;
+}
+
+body {
+  margin: 5px 20% 5px 20%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+h1, h2, h3{
+  font-family: 'Lobster Two', cursive;
+  font-size: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.Conclusion, .About {
+  text-align: center;
+}
+
+
+.button {
+  font-size: 15px;
+  height: 45px;
+  border-radius: 6px;
+  background-color: #000000;
+  color: white;
+  flex: 100%;
+}
+
+.Greeting {
+  text-align: center;
+  margin-top: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.winmsg {
+  flex: 100%;
+}
+
+.info {
+  flex: 100%;
+}
